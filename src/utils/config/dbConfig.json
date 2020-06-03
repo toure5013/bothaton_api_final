@@ -33,7 +33,7 @@
 
     },
     "mongodb": {
-        "uri": "mongodb+srv://toure5013:Kassim225_pere@healthappapi-eclon.mongodb.net/test?retryWrites=true&w=majority"
+        "uri": "mongodb+srv://toure5013:GNb8bfygufVbNlao@healthappapi-eclon.mongodb.net/test?retryWrites=true&w=majority"
     },
     "postgree": {
 

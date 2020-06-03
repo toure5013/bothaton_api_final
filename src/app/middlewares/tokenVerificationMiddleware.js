@@ -12,7 +12,7 @@ let checkToken = (req, res, next) => {
     logger.info(JSON.stringify(req.headers));
 
     //get token from headers (express headers are auto converted to lowercase)
-    let token = req.headers["x-access-token"] || req.headers["authorization"] || req.headers["Authorization"];
+    let token = req.headers["x-access-token"] || req.headers["authorization"];
     try {
         if (token.startsWith("Bearer")) {
             //Remove Bearer
@@ -20,12 +20,12 @@ let checkToken = (req, res, next) => {
         }
     } catch (e) {
         token = false;
-        logger.error("Error token invalid " + JSON.stringify(e));
+        logger.error("Error token invalid (1) " + JSON.stringify(e));
         return res.json({
             error: true,
             success: false,
             status: 400,
-            message: "Error token invalid " + JSON.stringify(e)
+            message: "Error token invalid (1)" + JSON.stringify(e)
         });
     }
 
@@ -33,8 +33,8 @@ let checkToken = (req, res, next) => {
     if (token) {
         const secret = config.tokenkey;
         tokenDbRequest.findOneToken(token).then(result => {
-            console.log(result);
-            console.log("tok tok tok to,")
+            // console.log(result);
+            console.log("tokenVerfication folder")
             if (result.length !== 0) {
                 return res.json({
                     error: true,
@@ -44,13 +44,15 @@ let checkToken = (req, res, next) => {
                 });
             } else {
                 jwt.verify(token, secret, (err, decoded) => {
-                    console.log(decoded)
+                    // console.log(decoded)
                     if (err) {
+                        console.log('tokenVerfication folder' + err.toString());
+                        logger.error('tokenVerfication folder' + err.toString());
                         return res.json({
                             error: true,
                             success: false,
                             status: 500,
-                            message: message.error.invalid_token,
+                            message: "ERROR (2) " + message.error.invalid_token,
                         });
                     } else {
                         req.decoded = decoded;
@@ -65,7 +67,7 @@ let checkToken = (req, res, next) => {
             error: true,
             success: false,
             status: 400,
-            message: message.error.missing_token,
+            message: "ERROR (3) " + message.error.missing_token,
         });
     }
 };

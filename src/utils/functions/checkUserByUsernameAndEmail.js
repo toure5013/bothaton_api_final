@@ -24,10 +24,8 @@ exports.checkUserByEmail = async function(email) {
         .then(
             user => {
                 console.log("--------------je verfie email")
-                console.log(user);
-                if (user == false) {
 
-                } else {
+                if (user) {
                     //email already-taken
                     emailExist = true;
                 }
@@ -45,24 +43,24 @@ exports.checkUserByEmail = async function(email) {
 }
 
 
-// exports.checkUserByUsername = async function(username) {
-//     var usernameExist = false;
-//     await userDbRequest.findOneByUsername(username)
-//     .then(
-//         user => {
-//             if (user) {
-//                 //username already-taken we put DataAlreadyTaken to true;
-//                 console.log("username dejà pri")
-//                 usernameExist = true;
-//             }
-//         }).catch((e) => { //if err
-//         logger.error(JSON.stringify(e));
-//         res.json({
-//             error : true,
-//             success : false,
-//             status: 500,
-//             message: "Error :" + e
-//         });
-//     });
-//     return usernameExist;
-// }
+exports.checkUserByUsername = async function(username) {
+    var usernameExist = false;
+    await userDbRequest.findOneByUsername(username)
+        .then(
+            user => {
+                if (user) {
+                    //username already-taken we put DataAlreadyTaken to true;
+                    console.log("username dejà pri")
+                    usernameExist = true;
+                }
+            }).catch((e) => { //if err
+            logger.error(JSON.stringify(e));
+            res.json({
+                error: true,
+                success: false,
+                status: 500,
+                message: "Error :" + e
+            });
+        });
+    return usernameExist;
+}

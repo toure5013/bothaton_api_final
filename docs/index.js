@@ -13,7 +13,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
 const expressValidator = require('express-validator')
-const config = require('../utils/config/config.json');
+const config = require('../src/utils/config/config.json');
 //defining the Express App
 const app = express();
 
@@ -49,8 +49,8 @@ app.use(cors());
 -----------------------------------------------------------------------------------*/
 // const migrate = require('../database/migration');
 // console.log(migrate);
-const routes = require('../routes/routes');
-const logger = require('./middlewares/logMiddleware').logMiddleware;
+const routes = require('../src/routes/routes');
+const logger = require('../src/app/middlewares/logMiddleware').logMiddleware;
 
 
 /* ----------------------------------------------------------------------------------

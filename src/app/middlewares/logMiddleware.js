@@ -1,5 +1,5 @@
 const winston = require('winston');
-const winstonRotator =  require('winston-daily-rotate-file');
+const winstonRotator = require('winston-daily-rotate-file');
 const date = new Date();
 
 
@@ -8,12 +8,12 @@ const date = new Date();
             For changing the save time change dateOfLog to dateOfLogDaily or dateOfLogMonthly or dateOfLogYearly.
 //-------------------------------------------------------------------------------------------------------------------------------------*/
 
-const day =date.getUTCDate() ;
-const month = (date.getUTCMonth()+1);
+const day = date.getUTCDate();
+const month = (date.getUTCMonth() + 1);
 const year = date.getUTCFullYear();
 
 //Create one folder per day
-var dateOfLogDaily = day + "-" +  month+ "-" + year;
+var dateOfLogDaily = day + "-" + month + "-" + year;
 
 //Create one folder per  month
 var dateOfLogMonthly = month + "-" + year;
@@ -24,6 +24,8 @@ var dateOfLogYearly = year;
 //-------Date of save : default is daily-------
 var dateOfLog = dateOfLogMonthly;
 
+//path of register
+const pathMiddleware = './logs/' + dateOfLog;
 
 /*---------------------------------------------------------------------------------
     Defintion des différents types de log et les fichiers dans lesquels enrégistré
@@ -31,33 +33,33 @@ var dateOfLog = dateOfLogMonthly;
 
 
 const consoleConfig = new winston.transports.Console({
-        'colorize' : true
-    });
+    'colorize': true
+});
 
-const infoConfig =  new winston.transports.File({
-        filename : './utils/logs/'+ dateOfLog + '/info.log',
-        level : 'info',
-    });
+const infoConfig = new winston.transports.File({
+    filename: `${pathMiddleware}/info.log`,
+    level: 'info',
+});
 
-const errorConfig =    new winston.transports.File({
-            filename : './utils/logs/'+ dateOfLog +'/error.log',
-            level : 'error',
-        });
+const errorConfig = new winston.transports.File({
+    filename: `${pathMiddleware}/error.log`,
+    level: 'error',
+});
 
 const debugConfig = new winston.transports.File({
-        filename : `./utils/logs/${dateOfLog}/debug.log`,
-        level : 'debug',
-    });
+    filename: `${pathMiddleware}/debug.log`,
+    level: 'debug',
+});
 
 const warningConfig = new winston.transports.File({
-            filename : `./utils/logs/${dateOfLog}/warning.log`,
-            level : 'warn',
-    });
+    filename: `${pathMiddleware}/warning.log`,
+    level: 'warn',
+});
 
 const sillyCongig = new winston.transports.File({
-            filename : `./utils/logs/${dateOfLog}/silly.log`,
-            level : 'silly',
-    });
+    filename: `${pathMiddleware}/silly.log`,
+    level: 'silly',
+});
 
 
 
@@ -69,37 +71,36 @@ const sillyCongig = new winston.transports.File({
 -on a un retour de ce type : - Date : 2019-10-13T17:41:20.350Z  --  level : warn -- message : message de log
 //---------------------------------------------------------------------*/
 
-const myFormat = winston.format.printf(({level,timestamp,message})=>{
-        return `- Date : ${timestamp}  --  level : ${level} -- message : ${message} ` ;
-    });
+const myFormat = winston.format.printf(({ level, timestamp, message }) => {
+    return `- Date : ${timestamp}  --  level : ${level} -- message : ${message} `;
+});
 
 
 
 /*---------------------------------------------------------------------
                         Defintion des différents types de log
 //---------------------------------------------------------------------*/
-exports.logMiddleware =  winston.createLogger({
-    format : winston.format.combine(
+exports.logMiddleware = winston.createLogger({
+    format: winston.format.combine(
         winston.format.timestamp(),
         winston.format.prettyPrint(),
         winston.format.label(),
         winston.format.colorize(),
         myFormat
-    ) ,
+    ),
     //to caught log and save in file
-    transports : [
+    transports: [
         consoleConfig,
-        infoConfig, 
+        infoConfig,
         errorConfig,
         debugConfig,
         warningConfig,
     ],
     //To caught exception and save in file
-    exceptionHandlers : [
-        new winston.transports.File(
-            {
-                filename : './utils/logs/'+ dateOfLog +'/Exception.log',
-            }),
+    exceptionHandlers: [
+        new winston.transports.File({
+            filename: `${pathMiddleware}/Exception.log`,
+        }),
     ]
 });
 

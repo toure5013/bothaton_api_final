@@ -13,7 +13,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
 const expressValidator = require('express-validator')
-const config = require('../utils/config/config.json');
+const config = require('./src/utils/config/config.json');
 //defining the Express App
 const app = express();
 
@@ -86,8 +86,10 @@ app.use("/*", (req, res) => {
 /* ----------------------------------------------------------------------------------
                                 SERVER LISTENING
 -----------------------------------------------------------------------------------*/
-app.listen(config.port, config.hostname, () => {
-    console.log("Applcation démarrer sur http://" + config.hostname + ":" + config.port);
-    logger.info("Application démarré sur " + config.hostname + ":" + config.port);
+const host = process.env.HOST || config.hostname;
+const port = process.env.PORT || config.port;
+app.listen(port, host, () => {
+    console.log("Applcation démarrer sur http://" + host + ":" + host);
+    logger.info("Application démarré sur " + host + ":" + port);
 
 });

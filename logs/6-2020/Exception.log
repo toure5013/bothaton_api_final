@@ -1,0 +1,165 @@
+- Date : 2020-06-03T21:58:20.003Z  --  level : [31merror[39m -- message : uncaughtException: Cannot find module '../../utils/functions/verifyDiseaseData'
+Require stack:
+- S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\app\controllers\disease.controller.js
+- S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\routes\disease.route.js
+- S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\routes\routes.js
+- S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\server.js
+Error: Cannot find module '../../utils/functions/verifyDiseaseData'
+Require stack:
+- S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\app\controllers\disease.controller.js
+- S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\routes\disease.route.js
+- S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\routes\routes.js
+- S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\server.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:794:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\app\controllers\disease.controller.js:7:20)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\routes\disease.route.js:2:27)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14) 
+- Date : 2020-06-03T21:58:57.637Z  --  level : [31merror[39m -- message : uncaughtException: diseaseRoute.auth is not a function
+TypeError: diseaseRoute.auth is not a function
+    at Object.exports.configRoutes (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\routes\routes.js:17:18)
+    at Object.<anonymous> (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\server.js:71:8)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 
+- Date : 2020-06-03T21:59:27.959Z  --  level : [31merror[39m -- message : uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\node_modules\express\lib\application.js:482:19)
+    at Object.exports.diseases (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\routes\disease.route.js:51:9)
+    at Object.exports.configRoutes (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\routes\routes.js:17:18)
+    at Object.<anonymous> (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\server.js:71:8)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 
+- Date : 2020-06-03T22:07:52.258Z  --  level : [31merror[39m -- message : uncaughtException: Unexpected token '.'
+S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\app\database\query\Disease.query.js:34
+    .then(item => {
+    ^
+
+SyntaxError: Unexpected token '.'
+    at Module._compile (internal/modules/cjs/loader.js:892:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\app\controllers\disease.controller.js:10:26)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\routes\disease.route.js:2:27)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10) 
+- Date : 2020-06-03T22:20:40.942Z  --  level : [31merror[39m -- message : uncaughtException: Identifier 'findUserOneDiseaseById' has already been declared
+S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\app\database\query\Disease.query.js:54
+const findUserOneDiseaseById = (user_id, disease) => {
+      ^
+
+SyntaxError: Identifier 'findUserOneDiseaseById' has already been declared
+    at Module._compile (internal/modules/cjs/loader.js:892:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\app\controllers\disease.controller.js:10:26)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\routes\disease.route.js:2:27)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10) 
+- Date : 2020-06-03T22:23:16.334Z  --  level : [31merror[39m -- message : uncaughtException: Route.get() requires a callback function but got a [object Object]
+Error: Route.get() requires a callback function but got a [object Object]
+    at Route.<computed> [as get] (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\node_modules\express\lib\application.js:482:19)
+    at Object.exports.diseases (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\routes\disease.route.js:31:9)
+    at Object.exports.configRoutes (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\routes\routes.js:17:18)
+    at Object.<anonymous> (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\server.js:71:8)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 
+- Date : 2020-06-03T22:23:20.020Z  --  level : [31merror[39m -- message : uncaughtException: Route.get() requires a callback function but got a [object Object]
+Error: Route.get() requires a callback function but got a [object Object]
+    at Route.<computed> [as get] (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\node_modules\express\lib\application.js:482:19)
+    at Object.exports.diseases (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\routes\disease.route.js:31:9)
+    at Object.exports.configRoutes (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\routes\routes.js:17:18)
+    at Object.<anonymous> (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\server.js:71:8)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 
+- Date : 2020-06-03T22:32:58.850Z  --  level : [31merror[39m -- message : uncaughtException: await is only valid in async function
+S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\app\database\query\Disease.query.js:74
+        var diseaseRturn = await Disease.find({ user_id: user_id, disease: disease })
+                           ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:892:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\app\controllers\disease.controller.js:10:26)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\routes\disease.route.js:2:27)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10) 
+- Date : 2020-06-03T22:33:12.082Z  --  level : [31merror[39m -- message : uncaughtException: await is only valid in async function
+S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\app\database\query\Disease.query.js:74
+        var diseaseRturn = await Disease.find({ user_id: user_id, disease: disease })
+                           ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:892:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\app\controllers\disease.controller.js:10:26)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\src\routes\disease.route.js:2:27)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10) 

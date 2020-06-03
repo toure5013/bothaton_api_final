@@ -18,11 +18,7 @@ exports.login = (req, res) => {
             .then(
                 // if all is ok
                 user => {
-
-                    console.info('-------------ici ici iciiciiciciicici---------------------')
-
                     console.log(user);
-                    console.info('----------------------------------')
                     if (user) {
                         const userPasswordFromDataBase = user[0].password
                         console.log(userPasswordFromDataBase);
@@ -30,6 +26,7 @@ exports.login = (req, res) => {
                             password,
                             userPasswordFromDataBase /* this is the password get from database */ ,
                             (err, result) => {
+
                                 if (result) {
                                     dataReturn = {
                                         error: false,
@@ -41,6 +38,7 @@ exports.login = (req, res) => {
                                     }
                                     resolve(dataReturn)
                                 } else {
+                                    logger.error(err.toString());
                                     dataReturn = {
                                         error: true,
                                         status: 404,

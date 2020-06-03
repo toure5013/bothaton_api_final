@@ -2,6 +2,7 @@
 const mongoose = require('mongoose');
 const UserSchema = require('../models/User').UserSchema; //Users models
 const TokenSchema = require('../models/Token').TokenSchema; //Token models
+const DiseaseSchema = require('../models/Disease').DiseaseSchema; //Disease models
 const dbConfig = require('../../utils/config/dbConfig.json').mongodb;
 const options = {
     useNewUrlParser: true,
@@ -38,7 +39,7 @@ db.once("open", function() {
 //user Model
 var UserModel = mongoose.model('User', UserSchema);
 var TokenModel = mongoose.model('Token', TokenSchema);
-
+var DiseaseModel = mongoose.model('Disease', DiseaseSchema)
 
 //Create collection
 // db.createCollection('User', User.UserValidator);
@@ -49,5 +50,6 @@ module.exports = {
     db,
     mongoose,
     UserModel,
-    TokenModel
+    TokenModel,
+    DiseaseModel
 }

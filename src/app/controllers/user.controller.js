@@ -82,11 +82,11 @@ exports.addOneUser = async(req, res, next) => {
                                 passwordHashed,
                             );
                             console.log(returnSaveUser);
-                            res.status(200).json({
-                                status: 200,
-                                message: message.success.save,
-                                date: date,
-                            });
+                            // res.status(200).json({
+                            //     status: 200,
+                            //     message: message.success.save,
+                            //     date: date,
+                            // });
                             if (returnSaveUser) {
                                 if (returnSaveUser.success == true) {
                                     res.status(200).json({

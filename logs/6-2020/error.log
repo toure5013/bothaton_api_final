@@ -1,0 +1,22 @@
+- Date : 2020-06-03T22:14:52.410Z  --  level : [31merror[39m -- message : ---------------WHEN  GET ONE USER ONE DISEASE BY ID --------------- 
+- Date : 2020-06-03T22:15:55.069Z  --  level : [31merror[39m -- message : ---------------WHEN  GET ONE USER ONE DISEASE BY ID --------------- 
+- Date : 2020-06-03T22:15:55.072Z  --  level : [31merror[39m -- message : ReferenceError: diseaseId is not defined 
+- Date : 2020-06-03T22:44:49.253Z  --  level : [31merror[39m -- message : TokenExpiredError: jwt expired 
+- Date : 2020-06-03T22:45:56.753Z  --  level : [31merror[39m -- message : tokenVerfication folderTokenExpiredError: jwt expired 
+- Date : 2020-06-03T22:52:50.790Z  --  level : [31merror[39m -- message : tokenVerfication folderTokenExpiredError: jwt expired 
+- Date : 2020-06-03T22:53:22.637Z  --  level : [31merror[39m -- message : tokenVerfication folderTokenExpiredError: jwt expired 
+- Date : 2020-06-03T22:53:37.581Z  --  level : [31merror[39m -- message : tokenVerfication folderTokenExpiredError: jwt expired 
+- Date : 2020-06-03T22:55:50.329Z  --  level : [31merror[39m -- message : tokenVerfication folderTokenExpiredError: jwt expired 
+- Date : 2020-06-03T22:57:10.726Z  --  level : [31merror[39m -- message : ---------------WHEN  GET ONE USER ONE DISEASE BY ID --------------- 
+- Date : 2020-06-03T23:00:13.943Z  --  level : [31merror[39m -- message : ---------------WHEN  GET ONE USER ONE DISEASE BY ID --------------- 
+- Date : 2020-06-03T23:00:48.320Z  --  level : [31merror[39m -- message : ---------------WHEN  GET ONE USER ONE DISEASE BY ID --------------- 
+- Date : 2020-06-03T23:02:50.470Z  --  level : [31merror[39m -- message : ---------------WHEN  GET ONE USER ONE DISEASE BY ID  (1) --------------- 
+- Date : 2020-06-03T23:02:50.473Z  --  level : [31merror[39m -- message : error (2)[object Promise] 
+- Date : 2020-06-03T23:04:09.592Z  --  level : [31merror[39m -- message : ---------------WHEN  GET ONE USER ONE DISEASE BY ID  (1) --------------- 
+- Date : 2020-06-03T23:04:09.594Z  --  level : [31merror[39m -- message : error (1)[object Promise] 
+- Date : 2020-06-03T23:04:44.221Z  --  level : [31merror[39m -- message : ---------------WHEN  GET ONE USER ONE DISEASE BY ID  (1) --------------- 
+- Date : 2020-06-03T23:04:44.222Z  --  level : [31merror[39m -- message : error (1)[object Promise] 
+- Date : 2020-06-03T23:05:32.209Z  --  level : [31merror[39m -- message : ---------------WHEN  GET ONE USER ONE DISEASE BY ID  (1) --------------- 
+- Date : 2020-06-03T23:05:32.212Z  --  level : [31merror[39m -- message : error (1)[object Promise] 
+- Date : 2020-06-03T23:06:14.088Z  --  level : [31merror[39m -- message : ---------------WHEN  GET ONE USER ONE DISEASE BY ID  (1) --------------- 
+- Date : 2020-06-03T23:06:14.089Z  --  level : [31merror[39m -- message : error (1)[object Promise] 

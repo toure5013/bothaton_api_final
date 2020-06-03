@@ -59,9 +59,16 @@ const findOneById = (Userid) => {
 
 // Find one user with email
 const findOneByEmail = (email) => {
-    const UserFind = User.find({ email: email });
-    if (UserFind.length !== 0) {
-        return UserFind;
+    const UserFound = User.find({ email: email });
+    if (UserFound.length !== 0) {
+        // var message = {
+        //     error: false,
+        //     success: true,
+        //     message: "User getted with success",
+        //     user: UserFound,
+        //     status: 200
+        // }
+        return UserFound;
     } else {
         return false;
     }
