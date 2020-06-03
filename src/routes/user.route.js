@@ -12,6 +12,7 @@ exports.users = function(baseUrl, app) {
     app.post(baseUrl + "/user", uploadPictureMiddleware.single('image'), [
         //tokenVerification.checkToken, //add permission
         UserController.addOneUser
+        //
     ]);
 
     //Get all users
