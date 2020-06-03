@@ -21,10 +21,12 @@ const uri = dbConfig.uri;
 try {
     mongoose.connect(uri, options);
 } catch (error) {
-    handleError(error);
+    // handleError(error);
+    console.log("ERROR   -----  " + error.stringify());
 };
 
 var db = mongoose.connection;
+
 db.on("error", console.error.bind(console, "connection error:"));
 
 db.once("open", function() {
