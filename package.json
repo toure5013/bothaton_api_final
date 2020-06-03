@@ -7,6 +7,9 @@
         "start": "node src/app/index.js",
         "mon": "nodemon src/app/index.js"
     },
+    "engines": {
+        "node": "12.13.0"
+    },
     "author": "",
     "license": "ISC",
     "dependencies": {
