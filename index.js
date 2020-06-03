@@ -13,7 +13,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
 const expressValidator = require('express-validator')
-const config = require('./utils/config/config.json');
+const config = require('./core/utils/config/config');
 //defining the Express App
 const app = express();
 
