@@ -9,7 +9,7 @@ const {
     imageUploadFunction
 } = require("../../utils/functions/uploadImage");
 const logger = require("../middlewares/logMiddleware").logMiddleware;
-const userDbRequest = require("../../database/query/User.query");
+const userDbRequest = require("../database/query/User.query");
 const checkUserByUsernameAndEmail = require("../../utils/functions/checkUserByUsernameAndEmail");
 
 //Variables

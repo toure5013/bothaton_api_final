@@ -3,8 +3,8 @@ const bcrypt = require('bcrypt')
 const message = require('../../utils/config/messages.json').message
 
 const logger = require('../middlewares/logMiddleware').logMiddleware
-const userDbRequest = require('../../database/query/User.query');
-const tokenDbRequest = require('../../database/query/Token.query')
+const userDbRequest = require('../database/query/User.query');
+const tokenDbRequest = require('../database/query/Token.query')
 
 var dataReturn = {}
 

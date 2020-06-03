@@ -14,7 +14,7 @@ For one Model follow this instructions :
 
 -Create Model file on /app/models/ and define your columns and their type in this file
     *Import sequelize and Sequelize from /database/db : 
-       EX :  const {sequelize, Sequelize} = require('../../database/db');
+       EX :  const {sequelize, Sequelize} = require('../database/db');
 
 ----------------------------------------------------------
                  Create your Queries

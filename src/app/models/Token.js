@@ -3,7 +3,7 @@
 ------------------------------------------------------------*/
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const db = require('../../database/mongodb').db;
+const db = require('../database/mongodb').db;
 const TokenSchema = new Schema({
     // attributes
     email: String,

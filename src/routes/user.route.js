@@ -1,7 +1,7 @@
 //Imports
-const UserController = require('../../app/controllers/user.controller')
-const uploadPictureMiddleware = require('../../app/middlewares/uploadPictureMiddleware');
-const tokenVerification = require('../../app/middlewares/tokenVerificationMiddleware');
+const UserController = require('../app/controllers/user.controller')
+const uploadPictureMiddleware = require('../app/middlewares/uploadPictureMiddleware');
+const tokenVerification = require('../app/middlewares/tokenVerificationMiddleware');
 
 
 

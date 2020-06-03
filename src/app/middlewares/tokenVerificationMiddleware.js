@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken");
 const message = require("../../utils/config/messages.json").message;
 const config = require("../../utils/config/config.json");
 const logger = require("./logMiddleware").logMiddleware;
-const tokenDbRequest = require("../../database/query/Token.query");
+const tokenDbRequest = require("../database/query/Token.query");
 
 let checkToken = (req, res, next) => {
     //   console.log(req.headers);
