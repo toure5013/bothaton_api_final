@@ -1,8 +1,8 @@
 'use strict'
 //Modules import
-const tokenGeneratorController = require('../../core/controllers/token.generator.controller');
-const tokenVerification = require('../../core/middlewares/tokenVerificationMiddleware');
-const signinController = require('../../core/controllers/auth.controller');
+const tokenGeneratorController = require('../controllers/token.generator.controller');
+const tokenVerification = require('../middlewares/tokenVerificationMiddleware');
+const signinController = require('../controllers/auth.controller');
 //Instance of token generator 
 const tokenGeneratorInstance = new tokenGeneratorController();
 

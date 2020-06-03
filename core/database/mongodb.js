@@ -1,8 +1,8 @@
 // Using Node.js `require()`
 const mongoose = require('mongoose');
-const UserSchema = require('../core/models/User').UserSchema; //Users models
-const TokenSchema = require('../core/models/Token').TokenSchema; //Token models
-const dbConfig = require('../utils/config/dbConfig.json').mongodb;
+const UserSchema = require('../models/User').UserSchema; //Users models
+const TokenSchema = require('../models/Token').TokenSchema; //Token models
+const dbConfig = require('../../utils/config/dbConfig.json').mongodb;
 const options = {
     useNewUrlParser: true,
     useUnifiedTopology: true,

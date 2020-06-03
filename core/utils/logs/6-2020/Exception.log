@@ -1,0 +1,16 @@
+- Date : 2020-06-03T02:51:30.417Z  --  level : [31merror[39m -- message : uncaughtException: Unexpected token ')'
+S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\database\query\User.query.js:103
+})
+ ^
+
+SyntaxError: Unexpected token ')'
+    at Module._compile (internal/modules/cjs/loader.js:892:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (S:\BISMILLAH HACKATHON\BOTATON_7jourè28-05-2020\codes\api_nodejs\app\controllers\user.controller.js:12:23)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32) 

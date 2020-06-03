@@ -1,5 +1,5 @@
 const logger = require('../../app/middlewares/logMiddleware').logMiddleware;
-const userDbRequest = require('../../database/query/User.query');
+const userDbRequest = require('../../core/database/query/User.query');
 
 
 //change this by using regex to factorise it 
