@@ -1,7 +1,7 @@
 // Using Node.js `require()`
 const mongoose = require('mongoose');
-const UserSchema = require('../app/models/User').UserSchema; //Users models
-const TokenSchema = require('../app/models/Token').TokenSchema; //Token models
+const UserSchema = require('../core/models/User').UserSchema; //Users models
+const TokenSchema = require('../core/models/Token').TokenSchema; //Token models
 const dbConfig = require('../utils/config/dbConfig.json').mongodb;
 const options = {
     useNewUrlParser: true,

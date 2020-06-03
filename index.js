@@ -50,7 +50,7 @@ app.use(cors());
 // const migrate = require('../database/migration');
 // console.log(migrate);
 const routes = require('./src/routes/routes');
-const logger = require('./app/middlewares/logMiddleware').logMiddleware;
+const logger = require('./core/middlewares/logMiddleware').logMiddleware;
 
 
 /* ----------------------------------------------------------------------------------
